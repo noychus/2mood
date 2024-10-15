@@ -7,24 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC2DCAE52CBE92DF00621466 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2DCAE42CBE92DF00621466 /* NetworkingService.swift */; };
+		AC2DCAE72CBEA95000621466 /* ProductDataState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2DCAE62CBEA95000621466 /* ProductDataState.swift */; };
+		AC2DCAE92CBEA9C300621466 /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2DCAE82CBEA9C300621466 /* ProductsViewModel.swift */; };
+		AC2DCAEB2CBEAB5F00621466 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2DCAEA2CBEAB5F00621466 /* ProductsView.swift */; };
+		AC2DCAEE2CBEB41100621466 /* ProductCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2DCAED2CBEB41100621466 /* ProductCellView.swift */; };
 		ACD481352CB6902C0064C36A /* MOOD2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD481342CB6902C0064C36A /* MOOD2App.swift */; };
 		ACD481372CB6902C0064C36A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD481362CB6902C0064C36A /* ContentView.swift */; };
 		ACD481392CB6902E0064C36A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD481382CB6902E0064C36A /* Assets.xcassets */; };
 		ACD4813C2CB6902E0064C36A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD4813B2CB6902E0064C36A /* Preview Assets.xcassets */; };
 		ACD481482CB691E70064C36A /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD481472CB691E70064C36A /* ProductModel.swift */; };
-		ACD4814A2CB6929F0064C36A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD481492CB6929F0064C36A /* APIService.swift */; };
-		ACD4814D2CB696190064C36A /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD4814C2CB696190064C36A /* CacheService.swift */; };
+		ACD4814A2CB6929F0064C36A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD481492CB6929F0064C36A /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC2DCAE42CBE92DF00621466 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		AC2DCAE62CBEA95000621466 /* ProductDataState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDataState.swift; sourceTree = "<group>"; };
+		AC2DCAE82CBEA9C300621466 /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
+		AC2DCAEA2CBEAB5F00621466 /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
+		AC2DCAED2CBEB41100621466 /* ProductCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellView.swift; sourceTree = "<group>"; };
 		ACD481312CB6902C0064C36A /* MOOD2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOOD2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD481342CB6902C0064C36A /* MOOD2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOOD2App.swift; sourceTree = "<group>"; };
 		ACD481362CB6902C0064C36A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ACD481382CB6902E0064C36A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACD4813B2CB6902E0064C36A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACD481472CB691E70064C36A /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
-		ACD481492CB6929F0064C36A /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		ACD4814C2CB696190064C36A /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
+		ACD481492CB6929F0064C36A /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				ACD481472CB691E70064C36A /* ProductModel.swift */,
+				AC2DCAE62CBEA95000621466 /* ProductDataState.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -89,6 +98,8 @@
 		ACD481432CB690740064C36A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AC2DCAEA2CBEAB5F00621466 /* ProductsView.swift */,
+				AC2DCAED2CBEB41100621466 /* ProductCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -96,6 +107,7 @@
 		ACD481442CB6907B0064C36A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				AC2DCAE82CBEA9C300621466 /* ProductsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -103,8 +115,8 @@
 		ACD481452CB690830064C36A /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				ACD481492CB6929F0064C36A /* APIService.swift */,
-				ACD4814C2CB696190064C36A /* CacheService.swift */,
+				ACD481492CB6929F0064C36A /* API.swift */,
+				AC2DCAE42CBE92DF00621466 /* NetworkingService.swift */,
 			);
 			name = Services;
 			path = Models;
@@ -188,11 +200,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC2DCAE92CBEA9C300621466 /* ProductsViewModel.swift in Sources */,
+				AC2DCAEE2CBEB41100621466 /* ProductCellView.swift in Sources */,
+				AC2DCAE52CBE92DF00621466 /* NetworkingService.swift in Sources */,
 				ACD481372CB6902C0064C36A /* ContentView.swift in Sources */,
 				ACD481482CB691E70064C36A /* ProductModel.swift in Sources */,
-				ACD4814A2CB6929F0064C36A /* APIService.swift in Sources */,
+				AC2DCAEB2CBEAB5F00621466 /* ProductsView.swift in Sources */,
+				AC2DCAE72CBEA95000621466 /* ProductDataState.swift in Sources */,
+				ACD4814A2CB6929F0064C36A /* API.swift in Sources */,
 				ACD481352CB6902C0064C36A /* MOOD2App.swift in Sources */,
-				ACD4814D2CB696190064C36A /* CacheService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
