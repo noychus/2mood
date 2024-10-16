@@ -18,7 +18,7 @@ struct ProductsView: View {
             } else if let error = vm.state.error {
                 Text("Error: \(error.localizedDescription)")
             } else {
-                List(vm.state.products, id: \.title) { product in
+                ForEach(vm.state.products, id: \.title) { product in
                     NavigationLink(destination: {}) {
                         ProductsCellView(product: product)
                     }

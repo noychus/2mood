@@ -12,6 +12,9 @@
 		AC2DCAE92CBEA9C300621466 /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2DCAE82CBEA9C300621466 /* ProductsViewModel.swift */; };
 		AC2DCAEB2CBEAB5F00621466 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2DCAEA2CBEAB5F00621466 /* ProductsView.swift */; };
 		AC2DCAEE2CBEB41100621466 /* ProductCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2DCAED2CBEB41100621466 /* ProductCellView.swift */; };
+		AC2DCAF22CBFB1C200621466 /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2DCAEF2CBFB1C200621466 /* AsyncImage.swift */; };
+		AC2DCAF32CBFB1C200621466 /* ImageCyche.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2DCAF02CBFB1C200621466 /* ImageCyche.swift */; };
+		AC2DCAF42CBFB1C200621466 /* ImageLoadStatePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2DCAF12CBFB1C200621466 /* ImageLoadStatePublisher.swift */; };
 		ACD481352CB6902C0064C36A /* MOOD2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD481342CB6902C0064C36A /* MOOD2App.swift */; };
 		ACD481372CB6902C0064C36A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD481362CB6902C0064C36A /* ContentView.swift */; };
 		ACD481392CB6902E0064C36A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD481382CB6902E0064C36A /* Assets.xcassets */; };
@@ -26,6 +29,9 @@
 		AC2DCAE82CBEA9C300621466 /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
 		AC2DCAEA2CBEAB5F00621466 /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
 		AC2DCAED2CBEB41100621466 /* ProductCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellView.swift; sourceTree = "<group>"; };
+		AC2DCAEF2CBFB1C200621466 /* AsyncImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		AC2DCAF02CBFB1C200621466 /* ImageCyche.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCyche.swift; sourceTree = "<group>"; };
+		AC2DCAF12CBFB1C200621466 /* ImageLoadStatePublisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoadStatePublisher.swift; sourceTree = "<group>"; };
 		ACD481312CB6902C0064C36A /* MOOD2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOOD2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD481342CB6902C0064C36A /* MOOD2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOOD2App.swift; sourceTree = "<group>"; };
 		ACD481362CB6902C0064C36A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +52,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC2DCAF52CBFB24300621466 /* ImageService */ = {
+			isa = PBXGroup;
+			children = (
+				AC2DCAEF2CBFB1C200621466 /* AsyncImage.swift */,
+				AC2DCAF02CBFB1C200621466 /* ImageCyche.swift */,
+				AC2DCAF12CBFB1C200621466 /* ImageLoadStatePublisher.swift */,
+			);
+			path = ImageService;
+			sourceTree = "<group>";
+		};
 		ACD481282CB6902C0064C36A = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +131,7 @@
 		ACD481452CB690830064C36A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				AC2DCAF52CBFB24300621466 /* ImageService */,
 				ACD481492CB6929F0064C36A /* API.swift */,
 				AC2DCAE42CBE92DF00621466 /* NetworkingService.swift */,
 			);
@@ -200,10 +217,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC2DCAF32CBFB1C200621466 /* ImageCyche.swift in Sources */,
+				AC2DCAF22CBFB1C200621466 /* AsyncImage.swift in Sources */,
 				AC2DCAE92CBEA9C300621466 /* ProductsViewModel.swift in Sources */,
 				AC2DCAEE2CBEB41100621466 /* ProductCellView.swift in Sources */,
 				AC2DCAE52CBE92DF00621466 /* NetworkingService.swift in Sources */,
 				ACD481372CB6902C0064C36A /* ContentView.swift in Sources */,
+				AC2DCAF42CBFB1C200621466 /* ImageLoadStatePublisher.swift in Sources */,
 				ACD481482CB691E70064C36A /* ProductModel.swift in Sources */,
 				AC2DCAEB2CBEAB5F00621466 /* ProductsView.swift in Sources */,
 				AC2DCAE72CBEA95000621466 /* ProductDataState.swift in Sources */,
