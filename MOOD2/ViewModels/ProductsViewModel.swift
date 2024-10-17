@@ -14,7 +14,7 @@ class ProductsViewModel: ObservableObject {
     private let networkingService = NetworkingService()
     private var cancellables = Set<AnyCancellable>()
     
-    func loadProducts(page: Int = 1, limit: Int = 10) async {
+    func loadProducts(page: Int = 1, limit: Int = 720) async {
         
         state.isLoading = true
         state.error = nil

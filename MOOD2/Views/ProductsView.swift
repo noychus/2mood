@@ -13,16 +13,23 @@ struct ProductsView: View {
     
     var body: some View {
         NavigationStack {
-            if vm.state.isLoading {
-                ProgressView()
-            } else if let error = vm.state.error {
-                Text("Error: \(error.localizedDescription)")
-            } else {
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack {
-                        ForEach(vm.state.products, id: \.title) { product in
-                            ProductsCellView(product: product)
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack {
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        LazyHStack {
+                            Spacer().frame(width: 8)
+                            
+                            ForEach(vm.state.products, id: \.title) { product in
+                                ProductsSmallCell(product: product)
+                            }
+                            
+                            Spacer().frame(width: 8)
                         }
+                    }
+                    .frame(height: 300)
+                    
+                    if let product = vm.state.products.last {
+                        ProductBigCell(product: product)
                     }
                 }
             }
