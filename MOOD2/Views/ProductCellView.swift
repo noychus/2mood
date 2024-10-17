@@ -15,18 +15,25 @@ struct ProductsCellView: View {
         VStack(alignment: .leading) {
             if let image = product.media.first?.url {
                 AsyncImage(url: URL(string: image)!)
+                    .frame(width: UIScreen.main.bounds.width / 2.6, height: UIScreen.main.bounds.width / 2.1, alignment: .center)
             }
             
-            Text(product.title)
-                .font(.subheadline)
-            
-            Text(" ")
-                .font(.footnote)
-            
-            Text(product.price.main.price.description + " " + product.price.main.currency)
-                .font(.callout)
+            VStack(alignment: .leading, spacing: 4) {
+                Text(product.title)
+                    .font(.system(size: 14, weight: .regular, design: .rounded))
+                    .lineLimit(2)
+                
+                    .font(.subheadline)
+                Text(product.variants.first?.variantOptionValues.first?.title.capitalized ?? "Белый")
+                    .font(.system(size: 14, weight: .regular, design: .rounded))
+                    .foregroundStyle(.black.opacity(0.5))
+                
+                Text(product.price.main.price.formattedPrice() + " " + product.price.main.currency)
+                    .font(.system(size: 14, weight: .regular, design: .rounded))
+            }
+            .padding(.bottom)
         }
-        .frame(width: UIScreen.main.bounds.width / 2.6)
+        .frame(width: UIScreen.main.bounds.width / 2.6, height: UIScreen.main.bounds.width / 1.3)
     }
 }
 

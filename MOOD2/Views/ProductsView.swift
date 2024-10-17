@@ -18,9 +18,11 @@ struct ProductsView: View {
             } else if let error = vm.state.error {
                 Text("Error: \(error.localizedDescription)")
             } else {
-                ForEach(vm.state.products, id: \.title) { product in
-                    NavigationLink(destination: {}) {
-                        ProductsCellView(product: product)
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack {
+                        ForEach(vm.state.products, id: \.title) { product in
+                            ProductsCellView(product: product)
+                        }
                     }
                 }
             }
